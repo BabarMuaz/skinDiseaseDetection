@@ -15,9 +15,9 @@ from keras.preprocessing import image
 from keras.models import load_model
 
 trdata = ImageDataGenerator()
-traindata = trdata.flow_from_directory(directory="/Users/babarmuaz/PycharmProjects/skinDiseaseDetection/Images/Training",target_size=(224,224))
+traindata = trdata.flow_from_directory(directory="/Users/babarmuaz/Desktop/Images/Training",target_size=(224,224))
 tsdata = ImageDataGenerator()
-testdata = tsdata.flow_from_directory(directory="/Users/babarmuaz/PycharmProjects/skinDiseaseDetection/Images/Training", target_size=(224,224))
+testdata = tsdata.flow_from_directory(directory="/Users/babarmuaz/Desktop/Images/Validation", target_size=(224,224))
 
 model = Sequential()
 model.add(Conv2D(input_shape=(224,224,3),filters=64,kernel_size=(3,3),padding="same", activation="relu"))
@@ -56,7 +56,7 @@ model.summary()
 #from keras.callbacks import ModelCheckpoint, EarlyStopping
 checkpoint = ModelCheckpoint("vgg16_1.h5", monitor='val_acc', verbose=1, save_best_only=True, save_weights_only=False, mode='auto', period=1)
 early = EarlyStopping(monitor='val_acc', min_delta=0, patience=20, verbose=1, mode='auto')
-hist = model.fit_generator(steps_per_epoch=100,generator=traindata, validation_data= testdata, validation_steps=10,epochs=1,callbacks=[checkpoint,early])
+hist = model.fit_generator(steps_per_epoch=1,generator=traindata, validation_data= testdata, validation_steps=1,epochs=1,callbacks=[checkpoint,early])
 
 
 #import matplotlib.pyplot as plt
@@ -72,7 +72,7 @@ hist = model.fit_generator(steps_per_epoch=100,generator=traindata, validation_d
 
 
 #from keras.preprocessing import image
-img = image.load_img("/Users/babarmuaz/PycharmProjects/skinDiseaseDetection/Images/catTest.jpg",target_size=(224,224))
+img = image.load_img("/Users/babarmuaz/Desktop/Images/catTest.jpg",target_size=(224,224))
 img = np.asarray(img)
 plt.imshow(img)
 img = np.expand_dims(img, axis=0)
