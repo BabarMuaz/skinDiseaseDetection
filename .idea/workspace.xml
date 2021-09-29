@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4cd3487-66ad-4e9e-95a2-67952423771b" name="Default Changelist" comment="imagesFilteration">
-      <change afterPath="$PROJECT_DIR$/derm7pt_melanoma_clinical.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/derm7pt_melanoma_dermo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/derm7pt_nevus_clinical.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/derm7pt_nevus_dermo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ISIC_2020_melanoma_removing_duplicates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ISIC_2020_nevus_removing_duplicates.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +53,8 @@
       <recent name="$PROJECT_DIR$/Images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.derm7pt_nevus_dermo">
-    <configuration name="ISIC_2020_melanoma" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.ISIC_2020_melanoma_removing_duplicates">
+    <configuration name="ISIC_2020_melanoma_removing_duplicates" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skinDiseaseDetection" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -68,7 +66,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ISIC_2020_melanoma.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ISIC_2020_melanoma_removing_duplicates.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -77,7 +75,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PAD_UFES_nevus" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ISIC_2020_nevus_removing_duplicates" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skinDiseaseDetection" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,7 +87,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PAD_UFES_nevus.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ISIC_2020_nevus_removing_duplicates.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ISIC_2020_melanoma_removing_duplicates" />
+        <item itemvalue="Python.ISIC_2020_nevus_removing_duplicates" />
         <item itemvalue="Python.derm7pt_nevus_dermo" />
         <item itemvalue="Python.derm7pt_nevus_clinical" />
         <item itemvalue="Python.derm7pt_melanoma_clinical" />
-        <item itemvalue="Python.ISIC_2020_melanoma" />
-        <item itemvalue="Python.PAD_UFES_nevus" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632655571824</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="imagesFilteration">
+      <created>1632680311538</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1632680311538</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
