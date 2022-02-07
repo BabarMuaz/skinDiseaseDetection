@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4cd3487-66ad-4e9e-95a2-67952423771b" name="Default Changelist" comment="ISIC_20 duplicates removed, only 5 images were found">
-      <change afterPath="$PROJECT_DIR$/melanoma_train_test_validation_split.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nevus_train_test_validation_split.py" afterDir="false" />
+    <list default="true" id="c4cd3487-66ad-4e9e-95a2-67952423771b" name="Default Changelist" comment="train,test,val splitting">
+      <change afterPath="$PROJECT_DIR$/ph2_data_filtering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/splitNewDataMelanoma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/splitNewDataNevus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melanoma_train_test_validation_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/melanoma_train_test_validation_split.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +52,11 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.ipynb_checkpoints" />
       <recent name="$PROJECT_DIR$/Images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.nevus_train_test_validation_split">
+  <component name="RunManager" selected="Python.splitNewDataMelanoma">
     <configuration name="ISIC_2020_melanoma_removing_duplicates" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="skinDiseaseDetection" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,48 +70,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ISIC_2020_melanoma_removing_duplicates.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ISIC_2020_nevus_removing_duplicates" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="skinDiseaseDetection" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ISIC_2020_nevus_removing_duplicates.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="derm7pt_nevus_dermo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="skinDiseaseDetection" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/derm7pt_nevus_dermo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,13 +120,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="splitNewDataMelanoma" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="skinDiseaseDetection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/splitNewDataMelanoma.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="splitNewDataNevus" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="skinDiseaseDetection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/splitNewDataNevus.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.splitNewDataMelanoma" />
+        <item itemvalue="Python.splitNewDataNevus" />
         <item itemvalue="Python.nevus_train_test_validation_split" />
         <item itemvalue="Python.melanoma_train_test_validation_split" />
         <item itemvalue="Python.ISIC_2020_melanoma_removing_duplicates" />
-        <item itemvalue="Python.ISIC_2020_nevus_removing_duplicates" />
-        <item itemvalue="Python.derm7pt_nevus_dermo" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632951692710</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="train,test,val splitting">
+      <created>1633192566138</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1633192566138</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,6 +287,7 @@
     <MESSAGE value="fitz17_imagesFiltered" />
     <MESSAGE value="imagesFilteration" />
     <MESSAGE value="ISIC_20 duplicates removed, only 5 images were found" />
-    <option name="LAST_COMMIT_MESSAGE" value="ISIC_20 duplicates removed, only 5 images were found" />
+    <MESSAGE value="train,test,val splitting" />
+    <option name="LAST_COMMIT_MESSAGE" value="train,test,val splitting" />
   </component>
 </project>

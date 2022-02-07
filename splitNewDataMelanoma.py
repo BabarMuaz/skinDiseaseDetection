@@ -10,7 +10,7 @@ file_list = os.listdir(folder_path)
 images = pd.DataFrame(file_list)  # converted to dataframe
 images = images.to_numpy()  # converted to numpy array
 
-train, temp = train_test_split(images, test_size=0.4, random_state=42)
+train, temp = train_test_split(images, test_size=0.2, random_state=42)
 
 # print(len(train))
 # print(len(temp))
